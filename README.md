@@ -19,7 +19,7 @@
 
 作成される画像
 
-[kancolle-hensei/hensei.png at master · miwarin/kancolle-hensei](https://github.com/miwarin/kancolle-hensei/blob/master/example/hensei.png "kancolle-hensei/hensei.png at master · miwarin/kancolle-hensei")
+![kancolle-hensei/hensei.png at master · miwarin/kancolle-hensei](https://github.com/miwarin/kancolle-hensei/blob/master/example/hensei.png "kancolle-hensei/hensei.png at master · miwarin/kancolle-hensei")
 
 以下のような画像をドラッグドロップする
 
