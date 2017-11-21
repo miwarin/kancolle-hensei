@@ -18,6 +18,7 @@ namespace kancolle_hensei
             {0,0}, {488,0},
             {0, 376 * 1}, {488, 376 * 1},
             {0, 376 * 2}, {488, 376 * 2},
+            {0, 376 * 3}, {488, 376 * 3},
         };
 
         public Form1()
@@ -82,11 +83,8 @@ namespace kancolle_hensei
         {
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop, false);
             int fileCount = files.Count();
-            if( fileCount > 6 )
-            {
-                fileCount = 6;
-            }
-            Bitmap henseiBitmap = new Bitmap(488 * 2, 376 * 3, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
+            int h = Convert.ToInt32(Math.Ceiling(fileCount / 2.0));
+            Bitmap henseiBitmap = new Bitmap(488 * 2, 376 * h, System.Drawing.Imaging.PixelFormat.Format24bppRgb);
             Graphics henseiGraphics = Graphics.FromImage(henseiBitmap);
 
             List<String> fl = LoadFilePath(files);
